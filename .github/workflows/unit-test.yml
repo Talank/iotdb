@@ -41,7 +41,7 @@ jobs:
       max-parallel: 15
       matrix:
         java: [ 17 ]
-        os: [ ubuntu-latest, windows-latest ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
         it_task: [ 'others', 'datanode' ]
     runs-on: ${{ matrix.os }}
 
